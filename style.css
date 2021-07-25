@@ -100,10 +100,14 @@ section {
   background-position: top center;
 }
 
-.img__container img {
+.mobile {
   width: 80%;
   margin-left: 4.5%;
   transform: translateY(-55%);
+}
+
+.img--box {
+  display: none;
 }
 
 .arrow {
@@ -117,4 +121,50 @@ section {
 .arrow img {
   width: 8px;
   height: 8px;
+}
+
+@media screen and (min-width: 1080px) {
+  .container {
+    width: 80%;
+    margin: auto;
+  }
+
+  section {
+    display: flex;
+    width: auto;
+    text-align: center;
+    padding-bottom: 0;
+    overflow-x: visible;
+  }
+
+  section > * {
+    width: 50%;
+  }
+
+  .bottom__container {
+    padding-top: 6em;
+    padding-bottom: 6em;
+  }
+
+  .img__container {
+    background-image: url('./images/illustration-woman-online-desktop.svg'),
+      url('./images/bg-pattern-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: 100%, 150%;
+    background-position: -4rem 1rem, -20rem -10rem;
+    position: relative;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  .img--box {
+    display: inline;
+    position: absolute;
+    left: -16%;
+    top: 38%;
+    width: 12em;
+    height: 12em;
+  }
 }
