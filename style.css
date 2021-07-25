@@ -85,6 +85,7 @@ section {
 
 .bottom__container {
   padding-inline: 2em;
+  margin-top: -18%;
 }
 
 .bottom__container h1 {
@@ -144,6 +145,7 @@ section {
   .bottom__container {
     padding-top: 6em;
     padding-bottom: 6em;
+    margin-top: inherit;
   }
 
   .img__container {
