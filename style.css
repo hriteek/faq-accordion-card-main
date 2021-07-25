@@ -1,0 +1,97 @@
+:root {
+  --clr-dark-blue: hsl(238, 29%, 16%);
+  --clr-red: hsl(14, 88%, 65%);
+
+  --clr-gradient-violet: hsl(273, 75%, 66%);
+  --clr-gradient-blue: hsl(240, 73%, 65%);
+
+  --clr-text-darker-blue: hsl(237, 12%, 33%);
+  --clr-text-dark-blue: hsl(240, 6%, 50%);
+
+  --clr-divider-light-blue: hsl(240, 5%, 91%);
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+body {
+  font-size: 12px;
+  background: linear-gradient(
+    to bottom right,
+    var(--clr-gradient-violet),
+    var(--clr-divider-light-blue)
+  );
+}
+
+.accordion {
+  background-color: white;
+  color: var(--clr-dark-blue);
+  cursor: pointer;
+  padding: 1em;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  /* transition: all 0.8s; */
+  border-bottom: 1px solid var(--clr-divider-light-blue);
+  position: relative;
+}
+
+.active,
+.accordion:hover {
+  /* background-color: #ccc; */
+}
+
+.panel {
+  padding: 1em;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+  text-align: left;
+  /* transition: all 0.8s; */
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  width: 375px;
+  background: #fff;
+  margin: auto;
+  text-align: center;
+  box-shadow: 0 10px 30px var(--clr-dark-blue);
+  border-radius: 2em;
+  padding-bottom: 2em;
+  position: relative;
+}
+
+.bottom__container {
+  padding-inline: 2em;
+}
+
+.bottom__container h1 {
+  font-size: 3.2rem;
+  color: var(--clr-text-darker-blue);
+  margin-bottom: 0.4em;
+}
+
+.img__container {
+  height: 30vh;
+  margin-top: -16vh;
+  background-image: url('./images/illustration-woman-online-mobile.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
