@@ -32,6 +32,11 @@ body {
   );
 }
 
+img {
+  display: block;
+  width: 100%;
+}
+
 .accordion {
   background-color: white;
   color: var(--clr-dark-blue);
@@ -89,9 +94,27 @@ section {
 }
 
 .img__container {
-  height: 30vh;
-  margin-top: -16vh;
-  background-image: url('./images/illustration-woman-online-mobile.svg');
+  background-image: url('./images/bg-pattern-mobile.svg');
   background-repeat: no-repeat;
-  background-position: center;
+  background-size: 80% auto;
+  background-position: top center;
+}
+
+.img__container img {
+  width: 80%;
+  margin-left: 4.5%;
+  transform: translateY(-55%);
+}
+
+.arrow {
+  float: right;
+}
+
+.active > .arrow {
+  transform: rotate(180deg);
+}
+
+.arrow img {
+  width: 8px;
+  height: 8px;
 }
